@@ -1,0 +1,26 @@
+{
+  "conversations": [
+    {
+      "id": "795de26f-7052-488f-ade9-6d3257dd8fe2",
+      "title": "hi",
+      "sessionId": "39cebda5-4909-4e66-bcfb-2cf2466de7fa",
+      "messages": [
+        {
+          "id": "0d02b8c9-bb21-46df-a26d-1b3f4c0c87ad",
+          "role": "user",
+          "content": "hi",
+          "timestamp": 1785757791879
+        },
+        {
+          "id": "f06c8fb3-9128-4c0b-8399-4783fabe08a2",
+          "role": "assistant",
+          "content": "codebuddy CLI not found. Make sure WorkBuddy desktop is installed, or set the codebuddy path in the plugin settings.",
+          "timestamp": 1785757791881,
+          "isError": true
+        }
+      ],
+      "createdAt": 1785757788685,
+      "updatedAt": 1785757791906
+    }
+  ]
+}
