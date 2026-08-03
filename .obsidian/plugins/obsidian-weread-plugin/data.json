@@ -65,10 +65,62 @@
   "cookieRefreshInterval": 12,
   "scheduledSyncToggle": false,
   "scheduledSyncInterval": 5,
-  "lastSyncTime": 0,
-  "lastSyncBookCount": 0,
+  "lastSyncTime": 1785761020950,
+  "lastSyncBookCount": 8,
   "lastSyncBookTitles": [],
-  "syncLogs": [],
+  "syncLogs": [
+    {
+      "id": "sync-1785761015002",
+      "timestamp": 1785761015002,
+      "totalBooks": 8,
+      "syncedBooks": 8,
+      "skippedBooks": 0,
+      "duration": 5.948,
+      "notes": [
+        {
+          "bookId": "834083",
+          "title": "哈利波特完整系列（全七册）",
+          "filePath": "哈利波特完整系列（全七册）.md"
+        },
+        {
+          "bookId": "23601930",
+          "title": "富爸爸穷爸爸",
+          "filePath": "富爸爸穷爸爸.md"
+        },
+        {
+          "bookId": "CB_CDj06F06i29K70k71FA5p3IS",
+          "title": "分心的优势",
+          "filePath": "分心的优势-CB_CDj06F06i29K70k71FA5p3IS.md"
+        },
+        {
+          "bookId": "3300153992",
+          "title": "做断骨增高手术的女孩们（轻纪实）",
+          "filePath": "做断骨增高手术的女孩们（轻纪实）.md"
+        },
+        {
+          "bookId": "3300057328",
+          "title": "分心的优势",
+          "filePath": "分心的优势-3300057328.md"
+        },
+        {
+          "bookId": "35808662",
+          "title": "RPA（流程自动化机器人）入门：手把手教你应用UiPath自动化工作（全彩）",
+          "filePath": "RPA（流程自动化机器人）入门：手把手教你应用UiPath自动化工作（全彩）.md"
+        },
+        {
+          "bookId": "695233",
+          "title": "三体全集（全三册）",
+          "filePath": "三体全集（全三册）.md"
+        },
+        {
+          "bookId": "932431",
+          "title": "神雕侠侣（套装共4册）纯文字版",
+          "filePath": "神雕侠侣（套装共4册）纯文字版.md"
+        }
+      ],
+      "success": true
+    }
+  ],
   "bookshelfSortMode": "recent",
   "bookshelfGroupByYear": true,
   "bookshelfDefaultSyncStatusFilter": "all",
