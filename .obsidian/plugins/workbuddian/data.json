@@ -89,10 +89,22 @@
           "role": "assistant",
           "content": "我这边所有工具（Write/Edit/Read/Glob/Bash）现在都被同一份\"非交互模式不允许弹权限\"挡住了，所以我也读不到你的 settings.json 看现状。只能纯文字告诉你位置和写法：\n\n**1. 打开 settings 文件**\n路径：`C:\\Users\\gaoji\\.codebuddy\\settings.json`\n- 如果文件不存在 → 用记事本新建一个，编码选 UTF-8，保存为 `.json`。\n- 已有的话直接打开编辑。\n\n**2. 加/补上这一段**（最小可用版，把 Write / Edit / Read / Glob / Grep / Bash 都放行）\n\n```json\n{\n  \"permissions\": {\n    \"allow\": [\n      \"Read\",\n      \"Edit\",\n      \"Write\",\n      \"Glob\",\n      \"Grep\",\n      \"Bash\"\n    ]\n  }\n}\n```\n\n保存后再让我\"继续\"，我就能落盘画像文件、并在 `方向思路.md` 加一条 `[[各平台德哈人设画像]]` 反向链接（你之前说不要改原笔记——要不要加链接先告诉我再改）。\n\n**3. 不想动 settings 的话**\n- 重启会话并加 `-y`：`codebuddy -p -y \"继续\"`\n- 或用免审批模式：`codebuddy -p --permission-mode bypassPermissions \"继续\"`\n\n告诉我你选哪条路，我再继续。",
           "timestamp": 1788925315598
+        },
+        {
+          "id": "95a8f7c0-6efb-4b89-9723-7478ae68edee",
+          "role": "user",
+          "content": "非交互模式不允许弹权限  可以在哪改？",
+          "timestamp": 1788930283489
+        },
+        {
+          "id": "6e2a1154-79b3-44d9-8c9e-b969ac4e5abe",
+          "role": "assistant",
+          "content": "",
+          "timestamp": 1788930283515
         }
       ],
       "createdAt": 1785757788685,
-      "updatedAt": 1788925365047,
+      "updatedAt": 1788930283515,
       "lastUsage": {
         "inputTokens": 446012
       }
