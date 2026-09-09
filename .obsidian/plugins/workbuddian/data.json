@@ -99,14 +99,14 @@
         {
           "id": "6e2a1154-79b3-44d9-8c9e-b969ac4e5abe",
           "role": "assistant",
-          "content": "",
+          "content": "这个“非交互模式”本身不是一个开关，而是**会话的启动方式**（比如用 `codebuddy -p` 无界面拉起的会话，弹不了授权框，所以所有需要审批的工具直接被拒）。改法有三条路：\n\n**方案 A：在 settings 文件里预放行工具（推荐）**\n权限不在图形界面的设置页里，而是在 JSON 配置文件里，两个位置任选：\n- 用户级（全局生效）：`C:\\Users\\gaoji\\.codebuddy\\settings.json`\n- 项目级（只对 vault 生效）：`C:\\Users\\gaoji\\Documents\\Obsidian Vault\\.codebuddy\\settings.json`\n\n文件不存在就新建（UTF-8），内容：\n\n```json\n{\n  \"permissions\": {\n    \"allow\": [\n      \"Read\",\n      \"Edit\",\n      \"Write\",\n      \"Glob\",\n      \"Grep\",\n      \"Bash\",\n      \"WebFetch\"\n    ]\n  }\n}\n```\n\n保存后**重开会话**才生效。之后即使在非交互模式，这些工具也不再需要弹窗。\n\n**方案 B：启动时带免审批参数**\n```\ncodebuddy -y \"你的指令\"\n```\n或\n```\ncodebuddy -p --permission-mode bypassPermissions \"你的指令\"\n```\n如果你是从 Obsidian 插件/编辑器里发起的对话，去该插件的设置里找有没有 “permission mode / 自动批准 / -y” 之类的选项。\n\n**方案 C：在终端里跑交互式会话**\n直接在终端 `cd` 到 vault 目录后运行 `codebuddy`（不带 `-p`），工具授权框会正常弹出，选择 \"always allow\" 也会写进 settings，一劳永逸。\n\n---\n改好后跟我说一声，我就把 `HP副业/各平台德哈人设画像.md` 落盘（内容用之前那版草稿）。",
           "timestamp": 1788930283515
         }
       ],
       "createdAt": 1785757788685,
-      "updatedAt": 1788930283515,
+      "updatedAt": 1788930326711,
       "lastUsage": {
-        "inputTokens": 446012
+        "inputTokens": 526955
       }
     }
   ],
@@ -115,12 +115,12 @@
     "cliTimeoutMinutes": 5,
     "nodePath": "",
     "injectVaultContext": true,
-    "injectCurrentNoteLink": false,
+    "injectCurrentNoteLink": true,
     "model": "auto",
-    "primaryColor": "",
+    "primaryColor": "#64dfe8",
     "contextWindowSize": 200000,
     "permissionMode": "default",
-    "language": "auto",
+    "language": "zh",
     "customInstruction": "",
     "pastedImageKeep": 20,
     "version": 10
