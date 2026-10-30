@@ -55,10 +55,34 @@
           "content": "Error: Cannot find module '../dist/codebuddy'\nRequire stack:\n- D:\\以前的文件\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\bin\\codebuddy\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n    at Function._load (node:internal/modules/cjs/loader:1192:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n    at Module.require (node:internal/modules/cjs/loader:1463:12)\n    at require (node:internal/modules/helpers:147:16)\n    at D:\\以前的文件\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\bin\\codebuddy:286:17\n    at Object.<anonymous> (D:\\以前的文件\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\bin\\codebuddy:294:3) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [\n    'D:\\\\以前的文件\\\\WorkBuddy\\\\resources\\\\app.asar.unpacked\\\\cli\\\\bin\\\\codebuddy'\n  ]\n}\n",
           "timestamp": 1793344477567,
           "isError": true
+        },
+        {
+          "id": "a07700b9-18f9-4f03-b6b3-51f43d77a3ca",
+          "role": "user",
+          "content": "1",
+          "timestamp": 1793345655333
+        },
+        {
+          "id": "6e8b035d-f5e6-4cd3-bbc0-8eb27ba58bc2",
+          "role": "assistant",
+          "content": "（无响应，请重试）",
+          "timestamp": 1793345655348
+        },
+        {
+          "id": "ca6f4086-aff3-4bcc-8934-736a9127ef27",
+          "role": "user",
+          "content": "hello",
+          "timestamp": 1793345672653
+        },
+        {
+          "id": "23b07261-1c75-4735-aef1-f704cb1b8d77",
+          "role": "assistant",
+          "content": "（无响应，请重试）",
+          "timestamp": 1793345672668
         }
       ],
       "createdAt": 1788931462293,
-      "updatedAt": 1793344478146,
+      "updatedAt": 1793345685378,
       "lastUsage": {
         "inputTokens": 169402
       }
