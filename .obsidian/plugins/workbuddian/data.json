@@ -52,9 +52,9 @@
     }
   ],
   "settings": {
-    "codebuddyPath": "C:\\Users\\gaoji\\.workbuddy\\bin\\codebuddy.cmd",
+    "codebuddyPath": "D:\\以前的文件\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\bin\\codebuddy",
     "cliTimeoutMinutes": 5,
-    "nodePath": "",
+    "nodePath": "C:\\Users\\gaoji\\.workbuddy\\binaries\\node\\versions\\22.22.2-6\\node.exe",
     "injectVaultContext": true,
     "injectCurrentNoteLink": true,
     "model": "auto",
