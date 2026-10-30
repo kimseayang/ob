@@ -744,7 +744,9 @@ var CodebuddyProvider = class {
     const procOptions = {
       timeout: this.timeout,
       // stdin 打开为管道：prompt 通过 stdin 喂给 CLI，不走命令行参数
-      stdio: ["pipe", "pipe", "pipe"]
+      stdio: ["pipe", "pipe", "pipe"],
+      // 强制 CLI 走 lite-wb bundle（dist 中仅此文件完整存在），绕过缺失的 codebuddy/codebuddy-headless 模块
+      env: { ...process.env, CODEBUDDY_FORCE_LITE_WB_BUNDLE: "1" }
     };
     if (vaultPath) {
       procOptions.cwd = vaultPath;
